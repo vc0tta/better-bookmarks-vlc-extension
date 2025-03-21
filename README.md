@@ -43,8 +43,9 @@ Bookmarks are stored in a simple text format in the `.bmk` file. Each line repre
 Example of a `.bmk` file:
 
 ```
-1200
-3000
+44788932
+141653712
+307581600
 ```
 
 ## Requirements
