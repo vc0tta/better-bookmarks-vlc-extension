@@ -85,8 +85,8 @@ function create_dialog()
 	w = vlc.dialog("Better Bookmarks")
 	-- w1 = w:add_text_input("Hello world!", 1, 1, 3, 1)
 	w2 = w:add_list(1, 2, 3, 1)
-	w3 = w:add_button("Go to time",click_Load, 2, 3, 1, 1)
-	w4 = w:add_button("Add bookmark",click_Add, 1, 3, 1, 1)
+	w3 = w:add_button("Jump to time",click_Load, 1, 3, 1, 1)
+	w4 = w:add_button("Add bookmark",click_Add, 2, 3, 1, 1)
 	w5 = w:add_button("Remove bookmark",click_Del, 3, 3, 1, 1)
 	
 	loadList()
@@ -109,7 +109,7 @@ function click_Load()
 	local selection = w2:get_selection()
 	for id,value in pairs(selection) do
 		-- vlc go to time command
-		vlc.var.set(vlc.object.input(), "time", hmsToMicroseconds(value))
+		vlc.var.set(vlc.object.input(), "time", lines_table[id])
 		-- resume play
 		-- vlc.playlist.play()
 		break
