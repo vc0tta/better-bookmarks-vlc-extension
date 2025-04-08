@@ -5,7 +5,7 @@
 function descriptor()
 	return {
 		title = "Better Bookmarks",
-		version = "2.5.3.21",
+		version = "0.9.0",
 		author = "Valentin Cotta",
 		url = 'https://github.com/vc0tta/better-bookmarks-vlc-extension',
 		shortdesc = "Better Bookmarks",
