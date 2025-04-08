@@ -58,10 +58,6 @@ Example of a `.bmk` file:
 - **Extension Not Appearing**: Ensure that the `better_bookmarks.lua` file is in the correct extensions folder and that VLC has been restarted.
 - **File Permissions**: Make sure you have the necessary permissions to read/write in the directory where the video and bookmark files are stored.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, feel free to open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the GNU General Public License v3.0. See the LICENSE file for more details.
